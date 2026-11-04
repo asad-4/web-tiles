@@ -11,12 +11,13 @@ canvas {
   height: 100%;
 }
 
-#help, #count {
+#help, #status {
   position: absolute;
   margin: 0;
   color: #e6e6f0;
   font: 18px system-ui, sans-serif;
-  opacity: 0.8;
+  opacity: 0.85;
+  pointer-events: none;
 }
 
 #help {
@@ -24,7 +25,24 @@ canvas {
   bottom: 8px;
 }
 
-#count {
+#status {
   right: 16px;
-  top: 8px;
+  top: 12px;
+}
+
+#switch {
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  padding: 6px 14px;
+  border: 1px solid #ffffff55;
+  border-radius: 6px;
+  background: #ffffff22;
+  color: #ffffff;
+  font: 16px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+#switch:hover {
+  background: #ffffff38;
 }
